@@ -37,7 +37,7 @@ public class CircleClickListener implements MouseListener, MouseMotionListener {
             mouseY = e.getY();
             mouseDragged = false;
 			
-			
+            Main.panel.repaint();
 			
 		}
 		// remove Circle when mouse on circle
@@ -81,7 +81,7 @@ public class CircleClickListener implements MouseListener, MouseMotionListener {
 		mouseX_dragged = e.getX();
         mouseY_dragged = e.getY();
         mouseDragged = true;
-        
+        Main.panel.repaint();
 	}
 
 	@Override
