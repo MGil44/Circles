@@ -6,15 +6,8 @@ public class Circle {
 	public Color color;
 
 	public static ArrayList<Circle> circles = new ArrayList<>();
-	public static Color[] colors = {Color.RED,
-									Color.GREEN,
-									Color.BLUE,
-									Color.WHITE,
-									Color.YELLOW,
-									Color.CYAN,
-									Color.MAGENTA,
-									Color.PINK,
-									Color.GRAY};
+	public static Color[] colors = { Color.RED, Color.GREEN, Color.BLUE, Color.WHITE, Color.YELLOW, Color.CYAN,
+			Color.MAGENTA, Color.PINK, Color.GRAY };
 
 	public Circle(int x, int y, int size, Color color) {
 		super();
@@ -23,7 +16,7 @@ public class Circle {
 		this.size = size;
 		this.color = color;
 	}
-	
+
 	public Color getColor() {
 		return color;
 	}
@@ -31,7 +24,7 @@ public class Circle {
 	public void setColor(Color color) {
 		this.color = color;
 	}
-	
+
 	public int getX() {
 		return x;
 	}

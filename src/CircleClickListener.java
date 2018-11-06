@@ -6,12 +6,7 @@ import java.awt.event.MouseMotionListener;
 public class CircleClickListener implements MouseListener, MouseMotionListener {
 	int changecolor = 0;
 	int width = 30, height = 30;
-	
-	static int mouseX, mouseY;
-	static int mouseX_dragged;
-	static int mouseY_dragged;
-	static boolean mouseDragged;
-	
+
 	@Override
 	public void mousePressed(MouseEvent e) {
 		int x = e.getX(), y = e.getY();
@@ -31,14 +26,8 @@ public class CircleClickListener implements MouseListener, MouseMotionListener {
 			// Mausrad
 			int width = 30, height = 30;
 			// x - width / 2, y - height / 2, width, height, Color.BLACK
-			//Oval.ovales.add(new Oval(x, y, width, height, Color.BLACK));
-			
-			mouseX = e.getX();
-            mouseY = e.getY();
-            mouseDragged = false;
-			
-            Main.panel.repaint();
-			
+			// Oval.ovales.add(new Oval(x, y, width, height, Color.BLACK));
+
 		}
 		// remove Circle when mouse on circle
 		if (e.getButton() == MouseEvent.BUTTON3) {
@@ -78,14 +67,12 @@ public class CircleClickListener implements MouseListener, MouseMotionListener {
 
 	@Override
 	public void mouseDragged(MouseEvent e) {
-		mouseX_dragged = e.getX();
-        mouseY_dragged = e.getY();
-        mouseDragged = true;
-        Main.panel.repaint();
+
 	}
 
 	@Override
 	public void mouseMoved(MouseEvent e) {
-		
+		// TODO Auto-generated method stub
+
 	}
 }

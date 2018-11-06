@@ -8,7 +8,7 @@ public class Main {
 	static Panel panel;
 	static CircleClickListener cl;
 	private static ImageIcon imgicon;
-	
+
 	public static void main(String[] args) {
 		init();
 		w.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -19,14 +19,14 @@ public class Main {
 		w.setContentPane(panel);
 		panel.setBackground(Color.BLACK);
 		panel.addMouseListener(cl);
-		
+
 		w.setVisible(true);
 	}
-	
+
 	private static void init() {
 		w = new JFrame("Circle Window");
 		panel = new Panel();
 		cl = new CircleClickListener();
 		imgicon = new ImageIcon("D:\\Eclipse\\workspace\\Circles\\res\\Circle.png");
-	}	
+	}
 }
