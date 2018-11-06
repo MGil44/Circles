@@ -22,7 +22,7 @@ public class CircleClickListener implements MouseListener {
 		
 		if(e.getButton() == MouseEvent.BUTTON2 ) {
 			//Mausrad
-			
+
 		}
 		//remove Circle when mouse on circle
 		if(e.getButton() == MouseEvent.BUTTON3 ) {

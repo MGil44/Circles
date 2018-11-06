@@ -59,18 +59,4 @@ public class Circle {
 	public static Color[] getColors() {
 		return colors;
 	}
-
-	public static void setColors(Color[] colors) {
-		Circle.colors = colors;
-	}
-
-	public static ArrayList<Circle> getCircles() {
-		return circles;
-	}
-	
-	public int getCirclefromList(ArrayList<Circle> cs, int index) {
-		int x = cs.get(index).x;
-		
-		return x;
-	}
 }
