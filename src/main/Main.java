@@ -1,5 +1,6 @@
 package main;
 import java.awt.Color;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
@@ -26,7 +27,7 @@ public class Main {
 		panel.setBackground(Color.BLACK);
 		panel.addMouseListener(cl);
 		w.addKeyListener(kl);
-		
+
 		panel.requestFocus();
 		
 		w.setVisible(true);

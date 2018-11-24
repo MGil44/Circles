@@ -42,6 +42,9 @@ public class CircleClickListener implements MouseListener, MouseMotionListener {
 						for (int i = 0; i < Circle.circles.size(); i++) {
 							if (circlex == Circle.circles.get(i).getX()) {
 								Circle.circles.remove(i);
+								//TODO if somecircle has index 1, then he need's to bee remove befor the circle who is under him.
+								
+								
 							}
 						}
 					}

@@ -4,32 +4,30 @@ import java.awt.Graphics;
 import java.util.ArrayList;
 
 public class GameStateManager {
-	//ArrayList gt.values();
-	
-	GameState gt = GameState.MENU;
 	private int currentState;
 	
-	public GameStateManager() {
-	}
+	private ArrayList<GameState> gamestates;
 	
-	public void draw(Graphics g) {
-		switch(gt) {
-		case MENU:
-			System.out.println("MenuState");
-			break;
-		case RUNNING:
-			System.out.println("runningState");
-			break;
-		case PAUSE:
-			System.out.println("PasueState");
-			break;
-		}
+	public static final int MENUSTATE = 0;
+	public static final int PLAYSTATE = 1;
+	
+	public GameStateManager() {
+		gamestates = new ArrayList<>();
+		//gamestates.add(new MenuState());
+		//gamestates.add(new PlayState());
+		
+		currentState = MENUSTATE;
 	}
+
 	
 	public void update() {
 		for(GameState gs : GameState.values()) {
 			
 		};
+	}
+	
+	public void draw(java.awt.Graphics2D g) {
+		
 	}
 	
 	public void setCurrentState(int state) {
