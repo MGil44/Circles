@@ -13,7 +13,7 @@ public class CircleClickListener implements MouseListener, MouseMotionListener {
 		int x = e.getX(), y = e.getY();
 		// add Circle
 		if (e.getButton() == MouseEvent.BUTTON1) {
-			// Rechtsklick
+			// Linksklick
 			Color color = Circle.colors[changecolor];
 			changecolor++;
 
@@ -25,14 +25,11 @@ public class CircleClickListener implements MouseListener, MouseMotionListener {
 
 		if (e.getButton() == MouseEvent.BUTTON2) {
 			// Mausrad
-			int width = 30, height = 30;
-			// x - width / 2, y - height / 2, width, height, Color.BLACK
-			Oval.ovales.add(new Oval(x, y, width, height, Color.BLACK));
 
 		}
 		// remove Circle when mouse on circle
 		if (e.getButton() == MouseEvent.BUTTON3) {
-			// Linksklick
+			// Rechtsklick
 			for (Circle c : Circle.circles) {
 				int circlex = c.getX();
 				int circley = c.getY();
@@ -43,8 +40,6 @@ public class CircleClickListener implements MouseListener, MouseMotionListener {
 							if (circlex == Circle.circles.get(i).getX()) {
 								Circle.circles.remove(i);
 								//TODO if somecircle has index 1, then he need's to bee remove befor the circle who is under him.
-								
-								
 							}
 						}
 					}

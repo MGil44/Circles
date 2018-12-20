@@ -6,6 +6,8 @@ public class Circle {
 	public int x, y, size;
 	public Color color;
 
+	private int index;
+	
 	public static ArrayList<Circle> circles = new ArrayList<>();
 	public static Color[] colors = { Color.RED, Color.GREEN, Color.BLUE, Color.WHITE, Color.YELLOW, Color.CYAN,
 			Color.MAGENTA, Color.PINK, Color.GRAY };
